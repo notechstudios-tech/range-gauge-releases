@@ -156,6 +156,35 @@
       line-height: 1.5;
     }
 
+    .screenshots {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+    }
+
+    .screenshots h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .screenshot-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .screenshot-grid img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #222;
+    }
+
+    @media (max-width: 560px) {
+      .screenshot-grid { grid-template-columns: 1fr; }
+    }
+
     .install {
       max-width: 600px;
       margin: 0 auto;
@@ -256,6 +285,14 @@
     <div class="icon">&#127757;</div>
     <h3>Any Orientation</h3>
     <p>Works in portrait or landscape. The UI adapts and ARCore stays in sync automatically.</p>
+  </div>
+</section>
+
+<section class="screenshots">
+  <h2>Screenshots</h2>
+  <div class="screenshot-grid">
+    <img src="screenshot1.png" alt="Range Gauge measuring distance to a tree — 14.7 m in day mode" />
+    <img src="screenshot2.png" alt="Range Gauge night vision mode at 4x zoom — 8.3 m" />
   </div>
 </section>
 
